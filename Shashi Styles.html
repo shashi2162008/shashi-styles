@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shashi Style - Online Clothing Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #e8fdf5; /* mint background */
+      color: #004d80; /* dark blue text */
+    }
+    header {
+      background-color: #004d80;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #80d8d0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #004d80;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      display: none;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section.active {
+      display: block;
+    }
+    .product {
+      border: 1px solid #80d8d0;
+      padding: 10px;
+      margin: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+    }
+    .product img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      margin-right: 15px;
+    }
+    .product button {
+      background-color: #004d80;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #004d80;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shashi Style Clothing</h1>
+    <p>Fashion for Everyone</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('new-arrivals')">New Arrivals</a>
+    <a href="#" onclick="showSection('promotions')">Promotions</a>
+    <a href="#" onclick="showSection('men')">Men</a>
+    <a href="#" onclick="showSection('women')">Women</a>
+    <a href="#" onclick="showSection('kids')">Kids</a>
+    <a href="#" onclick="showSection('about')">About Us</a>
+  </nav>
+
+  <section id="new-arrivals" class="active">
+    <h2>New Arrivals</h2>
+    <div class="product">
+      <img src="aa.jpg" alt="New Arrival Shirt">
+      <div>
+        <h3>Urban Cotton Shirt</h3>
+        <p>Breathable fabric ideal for tropical wear.</p>
+        <p><strong>Price:</strong> LKR 3,500</p>
+        <p><strong>Availability:</strong> In Stock</p>
+        
+      </div>
+    </div>
+    <div class="product">
+      <img src="pp.jpg" alt="New Arrival Dress">
+      <div>
+        <h3>Chic Floral Dress</h3>
+        <p>Mint green summer dress perfect for brunch dates.</p>
+        <p><strong>Price:</strong> LKR 4,800</p>
+        <p><strong>Availability:</strong> In Stock</p>
+    
+      </div>
+    </div>
+    <div class="product">
+      <img src="cc.jpg" alt="New Arrival Kids">
+      <div>
+        <h3>Cartoon Graphic Tee</h3>
+        <p>Fun prints for playful moments.</p>
+        <p><strong>Price:</strong> LKR 1,250</p>
+        <p><strong>Availability:</strong> In Stock</p>
+       
+      </div>
+    </div>
+  </section>
+
+  <section id="promotions">
+    <h2>Promotions</h2>
+    <div class="product">
+      <img src="dd.jpg" alt="Promo Jacket">
+      <div>
+        <h3>Denim Jacket</h3>
+        <p>Now at 25% off. Rugged yet stylish.</p>
+        <p><strong>Price:</strong> LKR 5,000 <del>LKR 6,600</del></p>
+        
+      </div>
+    </div>
+    <div class="product">
+      <img src="ee.jpg" alt="Promo Pants">
+      <div>
+        <h3>Classic Trousers</h3>
+        <p>Perfect fit formal trousers now at 20% off.</p>
+        <p><strong>Price:</strong> LKR 3,200 <del>LKR 4,000</del></p>
+       
+      </div>
+    </div>
+    <div class="product">
+      <img src="oo.jpg" alt="Promo Kurta">
+      <div>
+        <h3>Kurta & Pants</h3>
+        <p>Now at 50% off. Rugged yet stylish.</p>
+        <p><strong>Price:</strong> LKR 4,000 <del>LKR 8,000</del></p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="men">
+    <h2>Men's Clothing</h2>
+    <div class="product">
+      <img src="ff.jpg" alt="Men Shirt">
+      <div>
+        <h3>Formal White Shirt</h3>
+        <p>Office wear classic made with premium cotton.</p>
+        <p><strong>Price:</strong> LKR 3,200</p>
+       
+      </div>
+    </div>
+    <div class="product">
+      <img src="gg.jpg" alt="Men Polo">
+      <div>
+        <h3>Polo T-Shirt</h3>
+        <p>Comfy, stylish and perfect for weekend outings.</p>
+        <p><strong>Price:</strong> LKR 2,500</p>
+       
+      </div>
+    </div>
+    <div class="product">
+      <img src="hh.jpg" alt="Men Jeans">
+      <div>
+        <h3>Blue Denim Jeans</h3>
+        <p>Straight fit with vintage wash.</p>
+        <p><strong>Price:</strong> LKR 4,900</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="women">
+    <h2>Women's Clothing</h2>
+    <div class="product">
+      <img src="ii.jpg" alt="Women Top">
+      <div>
+        <h3>Mint Blouse</h3>
+        <p>Elegant and light with a soft texture.</p>
+        <p><strong>Price:</strong> LKR 3,300</p>
+        
+      </div>
+    </div>
+    <div class="product">
+      <img src="jj.jpg" alt="Women Saree">
+      <div>
+        <h3>Silk Saree</h3>
+        <p>Traditional meets modern. Rich colours and fabric.</p>
+        <p><strong>Price:</strong> LKR 6,800</p>
+        
+      </div>
+    </div>
+    <div class="product">
+      <img src="kk.jpg" alt="Women Dress">
+      <div>
+        <h3>Blue Party Dress</h3>
+        <p>Stunning design for evening functions.</p>
+        <p><strong>Price:</strong> LKR 5,200</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="kids">
+    <h2>Kids' Clothing</h2>
+    <div class="product">
+      <img src="ll.jpg" alt="Kids Jacket">
+      <div>
+        <h3>Kids Hoodie</h3>
+        <p>Soft fleece hoodie with cartoon prints.</p>
+        <p><strong>Price:</strong> LKR 2,000</p>
+        
+      </div>
+    </div>
+    <div class="product">
+      <img src="mm.jpg" alt="Kids Frock">
+      <div>
+        <h3>Little Girl's Frock</h3>
+        <p>Mint colour party wear for age 3–6 years.</p>
+        <p><strong>Price:</strong> LKR 3,400</p>
+ 
+      </div>
+    </div>
+    <div class="product">
+      <img src="nn.jpg" alt="Kids Shorts">
+      <div>
+        <h3>Boy's Denim Shorts</h3>
+        <p>Flexible and easy to wear. Everyday essential.</p>
+        <p><strong>Price:</strong> LKR 1,750</p>
+       
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" style="background-color: #e8fdf5; border-radius: 12px;">
+    <h2>👗 About Us</h2>
+    <p>👗 <strong>Welcome to Shashi Style</strong> – your go-to destination for affordable, trendy, and high-quality fashion.</p>
+    <p>✨ We believe in clothing that is stylish, comfortable, and suits every personality.</p>
+    <p>🌍 We proudly serve customers across Sri Lanka with a wide range of clothing for <strong>men</strong>, <strong>women</strong>, and <strong>kids</strong>.</p>
+ 
+  </section>
+
+  <footer>
+    <p>📞 <strong>0772144015</strong> | 📧 <strong>shashi.fernando.2008@gmail.com</strong></p>
+    <p>Made with <span style="color: red;">❤</span> by <strong>Shashi Style</strong></p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+    
